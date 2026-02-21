@@ -1,0 +1,48 @@
+/* Importación de fuente: nombre de fuente, url, formato y grosor */
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Font_Montserrat/Montserrat-Thin.ttf') format('truetype');
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Font_Montserrat/Montserrat-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Font_Montserrat/Montserrat-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Font_Montserrat/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Font_Montserrat/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Font_Montserrat/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Font_Montserrat/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Font_Montserrat/Montserrat-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Font_Montserrat/Montserrat-Black.ttf') format('truetype');
+    font-weight: 900;
+}
