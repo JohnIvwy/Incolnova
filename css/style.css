@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    background-color: #013;
+    width: 100%;
+    min-height: 100vh;
+    font-family: "Montserrat";
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div, header {
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+}
+
+.header__title {
+    box-sizing: border-box;
+    background-color: #ccc;
+    width: 95%;
+    padding: 1.3rem 0 1.3rem 2rem;
+    margin: 1rem auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* ------------------------ NavBar ------------------------ */
+
+.main-nav {
+    background-color: #79d;
+    padding: .8rem 4rem;
+    margin: .8rem 0;
+    box-sizing: border-box;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar__ul {
+    display: flex;
+}
+
+.navbar__ul li {
+    display: block;
+    margin-right: 3em;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.navbar__ul a{
+    text-decoration: none;
+    color: #000;
+}
+
+.div-searcher {
+    position: relative;
+    text-align: right;
+    background-color: #fff;
+    padding: .2rem .7rem;
+    border: 1px solid #000;
+    border-radius: 10px;
+    
+    display: flex;
+    align-items: center;
+}
+
+.div-searcher input {
+    font-size: 1em;
+    width: 19rem;
+    padding: .5rem;
+    min-width: 1rem;
+    background-color: transparent;
+    border: none;
+}
+
+.div-searcher input:focus-visible {
+    overflow: none;
+    border: none;
+}
+.div-searcher button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+.div-searcher img {
+    height: 2em;
+    margin: auto 0;
+}
+
+/* ------------------------ MAIN ------------------------ */
+
+.dashboard {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    min-height: 100%;
+    width: 100%;
+    max-width: 1500px;
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.card {
+    background-color: #eee;
+    padding: 1.2rem 1rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+.card-body{
+    flex-grow: 3;
+}
+.card-body dl {
+    margin: 0;
+}
+.card-body div {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+.card-body dt {
+    font-weight: 600;
+}
+
+.btn-edit, .btn-new-register, .btn-delete, .btn-filter {
+    font-size: 1em;
+    color: #ddd;
+    background-color: #0B0;
+    border: none;
+    border-radius: 10px;
+    padding: .4rem 1rem;
+}
+.btn-delete {background-color: #911;}
+
+.card-actions {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ------------------------ FILTER ------------------------ */
+
+.sec__aside {
+    background-color: #ccc;
+    margin: .8rem;
+    margin-bottom: 2rem;
+    padding:.1rem 2rem 2rem 2rem;
+    font-weight: 500;
+    height: min-content;
+}
+.form-group input, .form-group select {
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 1em;
+}
+.form-group label, .form-group input, .form-group select {
+    width: 100%;
+    display: block;
+    margin: .3rem 0;
+}
+
+.div-filter {
+    display: flex;
+    justify-content: end;
+    margin-top: 1rem;
+}
+
+.add-register {
+    position: sticky;
+    top: 10px;
+}
+
+/* ------------------------ MEDIA QUERIES ------------------------ */
+
+
+@media screen and (max-width: 800px) {
+    .main-nav {
+        justify-content: center;
+    }
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+    .aside {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .sec__aside {
+        flex-grow: 1;
+        min-width: 100px;
+        max-width: 300px;
+    }
+}
